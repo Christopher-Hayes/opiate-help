@@ -9,6 +9,8 @@ import { MapComponent } from './modules/map/map.component';
 import { ResourcesComponent } from './modules/resources/resources.component';
 import { AlternativeTreatmentComponent } from './modules/alternative-treatment/alternative-treatment.component';
 import { RehabilitationComponent } from './modules/rehabilitation/rehabilitation.component';
+import { EmergencyComponent } from './modules/emergency/emergency.component';
+import { FamilyFriendsComponent } from './modules/family-friends/family-friends.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,6 +18,7 @@ const appRoutes: Routes = [
   { path: 'resources', component: ResourcesComponent },
   { path: 'alternative-treatment', component: AlternativeTreatmentComponent },
   { path: 'rehabilitation', component: RehabilitationComponent }
+  { path: 'family-friends', component: FamilyFriendsComponent }
 ];
 
 @NgModule({
@@ -25,7 +28,9 @@ const appRoutes: Routes = [
     MapComponent,
     ResourcesComponent,
     AlternativeTreatmentComponent,
-    RehabilitationComponent
+    RehabilitationComponent,
+    EmergencyComponent,
+    FamilyFriendsComponent
   ],
   imports: [
     BrowserModule,
