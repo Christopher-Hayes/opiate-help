@@ -1,0 +1,109 @@
+body{
+	/*background:url("group-drug-rehab.jpg");
+	background-color: grey;*/
+	background-size: cover;
+	Background-position: center;
+	font-family: Lato;
+	color:white;
+	background-color:#8CABBE;
+}
+#header{
+	text-align: center;
+	padding-top: 0%;
+	text-shadow:0px 4px 3px rgba(0,0,0,0.4),
+				0px 8px 13px rgba(0,0,0,0.1),
+				0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#content{
+	text-align: left;
+	padding-top: 25%;
+	text-shadow:0px 4px 3px rgba(0,0,0,0.4),
+				0px 8px 13px rgba(0,0,0,0.1),
+				0px 18px 23px rgba(0,0,0,0.1);
+				
+}
+.parallax {
+    /* The image used */
+    background-image: url("../../../assets/resources_background.jpg");
+
+    /* Set a specific height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card{
+	padding-bottom:2%;
+	padding-top: 2%;
+	padding-left:1%;
+	padding-right:1%;
+	margin-left:1%;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display:inline-block;
+	float:left;
+	background-color: rgba(255, 255, 255, .25);
+	min-height:380px;
+		min-width:30%;
+		
+	
+}
+
+.card2{
+	min-height:515px;
+	padding-bottom:2%;
+	padding-top:2%;
+	padding-left:2%;
+	/*padding-right:2%;*/
+	margin-left:6%;
+	margin-top:0px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display:inline-block;
+	background-color: rgba(255, 255, 255, .25);
+	
+	
+}
+.card3{
+	
+	padding-bottom:2%;
+	padding-top: 2%;
+	padding-left:2%;
+	/*padding-right:2%;*/
+	margin-left:2%;
+	margin-top:3%;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display:inline-block;
+	
+}
+
+.card-deck {
+ display:inline-block;
+ float:left;
+ padding-left:3%;
+}
+
+h1{
+	
+	font-weight:700;
+	font-size:5em;
+	color:white;
+}
+
+ a:hover {color:white !important;} 
+ a{color:black;}
+
+
+html{
+	height:100%;
+}
+hr{
+	width:400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0.0.2);
+}
+.card-img-top{
+	
+}
