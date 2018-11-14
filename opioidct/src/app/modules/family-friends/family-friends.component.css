@@ -1,46 +1,65 @@
-* { font-family: 'Source Sans Pro', sans-serif; margin: 0; padding: 0; }
-
-form {
-  width: 100vw;
-  max-width: 500px;
-  height: 40px;
-  margin: 30vh auto 10vh auto !important;
-}
-form input {
-  width: calc(100% - 180px);
-  height: 100%;
-  font-size: 2em;
-  padding-left: 20px;
-  border-radius: 25px;
-}
-form .btn {
-  height: 50px;
-  width: 100px;
-  font-size: 2em;
-  margin-left: 20px;
-  border-radius: 25px;
+body{
+	/*background:url(iStock-HomePage.jpg);
+	background-size: cover;
+	Background-position: center; */
+	font-family: Lato;
+	color:white;
+	/*filter: brightness(75%);*/
 }
 
-.container-fluid {
-  text-align: center;
+#content{
+	text-align: center;
+	padding-top:15%;
+	position:center;
+	text-shadow:0px 4px 3px rgba(0,0,0,0.4),
+				0px 8px 13px rgba(0,0,0,0.1),
+				0px 18px 23px rgba(0,0,0,0.1);
+	/*filter: brightness(100%);*/
 }
-.btn-container {
-  display: inline-block;
-  width: 100vw;
-  max-width: 700px;
+.navbar-brand{
+	padding-left:1%;
+	
+}
+.form{
+	padding-left:10%;
+	margin-left:10%;
 }
 
-.stats, .res {
-  float: left;
-  width: 50%;
-  text-align: center;
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(255, 255, 255, .25);
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.card-block{
+	margin-top:3%;
+	margin-left: 10%;
+	
+}
+h1{
+	
+	font-weight:700;
+	font-size:5em;
+	color:white;
+	/*filter: brightness(100%);*/	
 }
 
-.stats .btn, .res .btn {
-  width: 100%;
-  max-width: 200px;
-  height: 80px;
-  display: inline-block;
-  border-radius: 30px;
-  font-size: 2em;
+.btn-default{
+		margin-left:2%;
+}
+html{
+	height:100%;
+}
+hr{
+	width:400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0.0.2);
+	filter: brightness(100%);
 }
