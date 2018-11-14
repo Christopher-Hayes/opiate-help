@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { Event } from '@angular/router';
 
 @Component({
   selector: 'app-county-map',
@@ -82,13 +83,13 @@ export class CountyMapComponent implements OnInit {
     const k = this.counties.indexOf(countyStr);
     switch(this.selectedStat) {
       case '0':
-        v = this.statDeaths[k];
+        v = this.statDeaths[k].toString();
         break;
       case '1':
-        v = this.statPharms[k];
+        v = this.statPharms[k].toString();
         break;
       case '2':
-        v = this.statTreatments[k];
+        v = this.statTreatments[k].toString();
         break;
       default:
         v = '';
@@ -143,7 +144,7 @@ export class CountyMapComponent implements OnInit {
 
   findColor(county, fill=true) {
     // Darken stroke
-    const v = (Math.max(0.0, this.showStat(county) - (fill ? 0.0 : 0.3))).toString();
+    const v = (Math.max(0.0, Number(this.showStat(county)) - (fill ? 0.0 : 0.3))).toString();
     switch(this.selectedStat) {
       case '0':
         return 'rgba(100,100,100,' + v + ')';
@@ -164,7 +165,7 @@ export class CountyMapComponent implements OnInit {
     e.stopPropagation();
   }
 
-  @HostListener('document:mousedown', ['$event']) mouseDown($event){
+  @HostListener('document:mousedown', ['$event']) mouseDown(event: MouseEvent){
     this.pX = this.psX = event.screenX;
     this.pY = this.psY = event.screenY;
 
@@ -172,7 +173,7 @@ export class CountyMapComponent implements OnInit {
     this.psDist = 0;
     this.pDown = true;
   }
-  @HostListener('document:mouseup', ['$event']) mouseUp($event){
+  @HostListener('document:mouseup', ['$event']) mouseUp(event: MouseEvent){
     this.pX = event.screenX;
     this.pY = event.screenY;
 
@@ -182,7 +183,7 @@ export class CountyMapComponent implements OnInit {
     this.pDown = false;
   }
 
-  @HostListener('document:mousemove', ['$event']) mouseMove($event){
+  @HostListener('document:mousemove', ['$event']) mouseMove(event: MouseEvent){
     if (this.pDown) {
       this.offsetX += event.screenX - this.pX;
       this.offsetY += event.screenY - this.pY;
@@ -192,7 +193,7 @@ export class CountyMapComponent implements OnInit {
     }
   }
 
-  @HostListener('document:click', ['$event']) clickedOutside($event){
+  @HostListener('document:click', ['$event']) clickedOutside(event: MouseEvent){
     this.selectedCounty = '';
     this.selectedStat = '-1';
     this.resetMapCamera();
