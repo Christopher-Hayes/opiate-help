@@ -1,0 +1,124 @@
+html { background-color: #E8EDDF !important; }
+.map-container {
+  width: calc(100vw - 300px);
+  float: left;
+}
+#moveMap {
+  transition: transform 0ms cubic-bezier(.29,.81,.38,1);
+}
+.svg-map {
+  height: 80vh;
+  width: auto;
+  transition: margin-left 400ms, transform 800ms cubic-bezier(.29,.81,.38,1);
+}
+.svg-map.county-selected text {
+  fill: white;
+}
+svg text {
+  fill: #83C3C6;
+  font-size: 30em;
+  text-anchor: middle;
+  user-select: none;
+  pointer-events: none;
+}
+.county {
+  cursor: pointer;
+  fill: #C0F8F9;
+  stroke: #83C3C6;
+  stroke-width: 20px;
+  transition: fill 400ms, stroke 400ms, opacity 200ms;
+}
+.county:hover {
+  fill: #224649;
+}
+.svg-map.county-selected .county {
+  opacity: 0.3;
+  /* transition: transform 400ms; */
+}
+
+
+.townName {
+  fill: grey !important;
+}
+.townPoint { 
+  fill: black !important;
+}
+/*
+.svg-map.county-selected .county:nth-child(2) { transform: translate(-60px, 60px); }    /* Fairfield  
+.svg-map.county-selected .county:nth-child(3) { transform: translate(20px, -120px); }     /* Hartford   
+.svg-map.county-selected .county:nth-child(4) { transform: translate(-60px, -60px); }   /* Litchfield 
+.svg-map.county-selected .county:nth-child(5) { transform: translate(-20px, 60px); }      /* Middlesex  
+.svg-map.county-selected .county:nth-child(6) { transform: translate(60px, 60px); }      /* New Haven  
+.svg-map.county-selected .county:nth-child(7) { transform: translate(120px, 60px); }   /* New London 
+.svg-map.county-selected .county:nth-child(8) { transform: translate(30px, -60px); }    /* Tolland    
+.svg-map.county-selected .county:nth-child(9) { transform: translate(120px, -60px); }   /* Windham    
+*/
+
+.svg-map.county-selected .county.active {
+  fill: #224649;
+  stroke: white;
+  z-index: 10;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  opacity: 1;
+}
+.stat-bar {
+  position: absolute;
+  width: 200px;
+  right: -200px;
+  opacity: 0;
+  transition: opacity 300ms, right 300ms;
+}
+.sidebar {
+  position: absolute;
+  float: left;
+  width: 200px;
+  right: -200px;
+  opacity: 0;
+  transition: opacity 300ms, right 300ms;
+}
+.show-bar {
+  right: 50px;
+  opacity: 1;
+}
+.sidebar .card, .stat-bar .card {
+  border: none;
+  transition: transform 200ms;
+}
+.sidebar .card:hover, .stat-bar .card:hover {
+  transform: scale(1.1);
+}
+.sidebar .card .card-body, .sidebar .card .card-footer {
+  color: white;
+  cursor: default;
+}
+.stat-bar .card .card-body {
+  color: white;
+  cursor: pointer;
+}
+.sidebar .card:nth-child(1) .card-body, .stat-bar .card:nth-child(1) .card-body {
+  background-color: #646464 !important;
+}
+.sidebar .card:nth-child(1) .card-footer, .stat-bar .card:nth-child(1) .card-footer {
+  background-color: #565656;
+}
+.sidebar .card:nth-child(2) .card-body, .stat-bar .card:nth-child(2) .card-body {
+  background-color: #7f557d !important;
+}
+.sidebar .card:nth-child(2) .card-footer, .stat-bar .card:nth-child(2) .card-footer {
+  background-color: #695068 !important;
+}
+.sidebar .card:nth-child(3) .card-body, .stat-bar .card:nth-child(3) .card-body {
+  background-color: #4d9de0 !important;
+}
+.sidebar .card:nth-child(3) .card-footer, .stat-bar .card:nth-child(3) .card-footer {
+  background-color: #3a6e9a;
+}
+.sidebar .card:nth-child(4) .card-body {
+  background-color: #673C4F !important;
+}
+.sidebar .card:nth-child(4) .card-footer {
+  background-color: #543a46 !important;
+}
+.sidebar .card-body p {
+  margin-bottom: 0px;
+}

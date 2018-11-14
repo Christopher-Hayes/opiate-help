@@ -11,14 +11,21 @@ import { AlternativeTreatmentComponent } from './modules/alternative-treatment/a
 import { RehabilitationComponent } from './modules/rehabilitation/rehabilitation.component';
 import { EmergencyComponent } from './modules/emergency/emergency.component';
 import { FamilyFriendsComponent } from './modules/family-friends/family-friends.component';
+import { StatsComponent } from './modules/stats/stats.component';
+import { AddictsComponent } from './modules/addicts/addicts.component';
+import { CountyMapComponent } from './modules/county-map/county-map.component';
+import { NavbarComponent } from './modules/navbar/navbar.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'map', component: MapComponent },
   { path: 'resources', component: ResourcesComponent },
   { path: 'alternative-treatment', component: AlternativeTreatmentComponent },
-  { path: 'rehabilitation', component: RehabilitationComponent }
-  { path: 'family-friends', component: FamilyFriendsComponent }
+  { path: 'rehabilitation', component: RehabilitationComponent },
+  { path: 'family-friends', component: FamilyFriendsComponent },
+  { path: 'stats', component: StatsComponent },
+  { path: 'addicts', component: AddictsComponent },
+  { path: 'county-map', component: CountyMapComponent }
 ];
 
 @NgModule({
@@ -30,7 +37,11 @@ const appRoutes: Routes = [
     AlternativeTreatmentComponent,
     RehabilitationComponent,
     EmergencyComponent,
-    FamilyFriendsComponent
+    FamilyFriendsComponent,
+    StatsComponent,
+    AddictsComponent,
+    CountyMapComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
