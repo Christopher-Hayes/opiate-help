@@ -76,7 +76,7 @@
       </div>
       <div class="card border-secondary m-3" [ngStyle]="{'opacity': selectedStat === '2' || selectedStat === '0' ? '0.5' : '1.0' }" (mouseover)="selectedStat = '1'">
         <div class="card-body p-2">
-          <h2>{{ selectedCounty === '' ? statPharms[counties.indexOf(hoverCounty)] : statPharms[getK()] }}</h2>
+          <h4>{{ selectedCounty === '' ? statPharms[counties.indexOf(hoverCounty)] : statPharms[getK()] }}</h4>
         </div>
         <div class="card-footer">
           <p>Number of Pharmacies that Prescribe Naloxone</p>

@@ -2,5 +2,13 @@
   position: fixed;
   width: 100vw;
   top: 0;
+  left: 0;
   z-index: 999;
+  margin: 0;
+}
+.navbar-brand {
+  line-height: 44px;
+}
+.navbar-nav .nav-item:hover {
+  background-color: #EFEFEF;
 }

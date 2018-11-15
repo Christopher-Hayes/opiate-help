@@ -7,6 +7,18 @@ body{
 	/*filter: brightness(75%);*/
 }
 
+.container:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../../assets/homeImg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
 #content{
 	text-align: center;
 	padding-top: 10%;

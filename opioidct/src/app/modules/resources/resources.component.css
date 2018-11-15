@@ -2,10 +2,18 @@ body{
 	/*background:url("group-drug-rehab.jpg");
 	background-color: grey;*/
 	background-size: cover;
-	Background-position: center;
+	background-position: center;
 	font-family: Lato;
 	color:white;
 	background-color:#8CABBE;
+
+  background-image: url("../../../assets/resources_background.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #header{
 	text-align: center;
@@ -24,11 +32,18 @@ body{
 				
 }
 .parallax {
+  position: fixed;
+  top: 0;
+  left: 0;
+
     /* The image used */
     background-image: url("../../../assets/resources_background.jpg");
 
     /* Set a specific height */
-    height: 100%; 
+    height: 100vh;
+    width: 100vw;
+
+    z-index: 10;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;

@@ -1,6 +1,7 @@
-html { background-color: #E8EDDF !important; }
+html { background-color: #E8EDDF !important; padding-top: 70px; }
 .map-container {
-  width: calc(100vw - 300px);
+  width: 50vw;
+  max-width: calc(100vw - 500px);
   float: left;
 }
 #moveMap {
@@ -13,6 +14,11 @@ html { background-color: #E8EDDF !important; }
 }
 .svg-map.county-selected text {
   fill: white;
+}
+svg {
+  overflow: visible;
+  max-width: 100%;
+  margin-left: -30%;
 }
 svg text {
   fill: #83C3C6;
@@ -61,17 +67,9 @@ svg text {
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
   opacity: 1;
 }
-.stat-bar {
+.stat-bar, .sidebar {
   position: absolute;
-  width: 200px;
-  right: -200px;
-  opacity: 0;
-  transition: opacity 300ms, right 300ms;
-}
-.sidebar {
-  position: absolute;
-  float: left;
-  width: 200px;
+  width: 300px;
   right: -200px;
   opacity: 0;
   transition: opacity 300ms, right 300ms;
