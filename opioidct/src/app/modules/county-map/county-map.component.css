@@ -119,3 +119,6 @@ svg text {
 .sidebar .card-body p {
   margin-bottom: 0px;
 }
+.sidebar .card-body.p-2 {
+  height: 40px;
+}

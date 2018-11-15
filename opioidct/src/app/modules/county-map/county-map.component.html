@@ -62,12 +62,12 @@
   <!-- COUNTY STATS -->
   <div class="card sidebar bg-light" [ngClass]="{'show-bar': selectedCounty !== '' || hoverCounty !== ''}">
     <div class="card-header">
-      <h2>{{ (selectedCounty === '' ? hoverCounty : selectedCounty).replace('_',' ') }}</h2>
+      <h4>{{ (selectedCounty === '' ? hoverCounty : selectedCounty).replace('_',' ') }}</h4>
     </div>
     <div class="card-body" (mouseout)="selectedStat = '-1'">
       <div class="card border-secondary m-3" [ngStyle]="{'opacity': selectedStat === '1' || selectedStat === '2' ? '0.5' : '1.0' }" (mouseover)="selectedStat = '0'">
         <div class="card-body p-2">
-          <h2>{{ selectedCounty === '' ? statDeaths[counties.indexOf(hoverCounty)] : statDeaths[getK()] }}</h2>
+          <h4>{{ selectedCounty === '' ? statDeaths[counties.indexOf(hoverCounty)] : statDeaths[getK()] }}</h4>
         </div>
         <div class="card-footer">
           <p>Number of Deaths</p>
@@ -83,7 +83,7 @@
       </div>
       <div class="card border-secondary m-3" [ngStyle]="{'opacity': selectedStat === '0' || selectedStat === '1' ? '0.5' : '1.0' }" (mouseover)="selectedStat = '2'">
         <div class="card-body p-2">
-          <h2>{{ selectedCounty === '' ? statTreatments[counties.indexOf(hoverCounty)] : statTreatments[getK()] }}</h2>
+          <h4>{{ selectedCounty === '' ? statTreatments[counties.indexOf(hoverCounty)] : statTreatments[getK()] }}</h4>
         </div>
         <div class="card-footer">
           <p>Opioid Treatment Admissions</p>
@@ -91,7 +91,7 @@
       </div>
       <div class="card border-secondary m-3" [ngStyle]="{'opacity': selectedStat !== '-1' ? '0.5' : '1.0' }">
         <div class="card-body p-2">
-          <h2>{{ selectedCounty === '' ? statTown[counties.indexOf(hoverCounty)] : statTown[getK()] }}</h2>
+          <h4>{{ selectedCounty === '' ? statTown[counties.indexOf(hoverCounty)] : statTown[getK()] }}</h4>
         </div>
         <div class="card-footer">
           <p>Town with Most Opioid-Related Deaths</p>
