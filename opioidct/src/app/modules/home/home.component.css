@@ -27,6 +27,9 @@ body{
 				0px 18px 23px rgba(0,0,0,0.1);
 	/*filter: brightness(100%);*/
 }
+#content h3 {
+  color: white;
+}
 .navbar-brand{
 	padding-left:1%;
 	
