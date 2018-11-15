@@ -15,6 +15,7 @@ import { StatsComponent } from './modules/stats/stats.component';
 import { AddictsComponent } from './modules/addicts/addicts.component';
 import { CountyMapComponent } from './modules/county-map/county-map.component';
 import { NavbarComponent } from './modules/navbar/navbar.component';
+import { FaqComponent } from './modules/faq/faq.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -25,7 +26,8 @@ const appRoutes: Routes = [
   { path: 'family-friends', component: FamilyFriendsComponent },
   { path: 'stats', component: StatsComponent },
   { path: 'addicts', component: AddictsComponent },
-  { path: 'county-map', component: CountyMapComponent }
+  { path: 'county-map', component: CountyMapComponent },
+  { path: 'faq', component: FaqComponent }
 ];
 
 @NgModule({
@@ -41,7 +43,8 @@ const appRoutes: Routes = [
     StatsComponent,
     AddictsComponent,
     CountyMapComponent,
-    NavbarComponent
+    NavbarComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
