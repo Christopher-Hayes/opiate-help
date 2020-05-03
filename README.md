@@ -1,2 +1,5 @@
-# opioidct
-A web application that provides useful information to families and addicts in an integrated form.
+# opioidct.com
+
+Angular app built for the 2018 Connecticut Tech Challenge.
+
+Prompt: Built a web app to help addicts and their families affected by the Opioid Crisis.
